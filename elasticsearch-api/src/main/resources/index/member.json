@@ -13,14 +13,25 @@
           "include": { "_tier_preference":  "data_content" }
         }
       }
+    },
+    "analysis": {
+      "analyzer": {
+        "nori": {
+          "type" : "nori",
+          "decompound_mode" : "mixed"
+        }
+      }
     }
   },
   "mappings":{
     "properties": {
-      "id": {
+      "video_room_id": {
         "type": "keyword"
       },
-      "brand": {
+      "participant_id": {
+        "type": "keyword"
+      },
+      "participant_mbti": {
         "type": "keyword"
       }
     }
